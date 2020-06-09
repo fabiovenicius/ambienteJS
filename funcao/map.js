@@ -17,11 +17,16 @@ const carrinho = [
     '{"nome": "Lapis", "preco": 2.10}',
     '{"nome": "Caneta Especial", "preco": 54.90}'
 ]
+ // Transforma o JSON em objeto
+ 
+const paraObjeto = json => JSON.parse(json)
 
-const precos = preco => JSON.parse(preco)
+const somentePreco = precos => precos.preco
 
-const precosSoltos = carrinho.map(precos)
+
+const resultadoFinal = carrinho.map(paraObjeto).map(somentePreco)
 
 console.log(carrinho [0])
 
-console.log(precosSoltoscd)
+console.log(resultadoFinal)
+
