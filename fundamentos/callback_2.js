@@ -23,3 +23,9 @@ console.log(notasBaixas)
 notasBaixas2 = notas.filter(nota => nota < 7)
 console.log(notasBaixas2)
 
+
+
+
+
+
+
